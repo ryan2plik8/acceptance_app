@@ -33,7 +33,7 @@ class UploadController extends BaseController {
 		//
 		$filename = Input::file('pdf')->getClientOriginalName();
 		$upload = Upload::create(array('filename' => $filename));
-		return Redirect::to('upload')->with('status', 'File Uploaded!');
+		return View::make('upload')->with('status', 'File Uploaded!');
 	}
 
 	/**
