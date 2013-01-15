@@ -1,6 +1,56 @@
 {
-    "hash": "8c52f9362e4e1835a194b5ec0d466d9c",
+    "hash": "c0ae92425b4e702c6d41d1369a7b61b8",
     "packages": [
+        {
+            "name": "amazonwebservices/aws-sdk-for-php",
+            "version": "1.5.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amazonwebservices/aws-sdk-for-php.git",
+                "reference": "1.5.17.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/amazonwebservices/aws-sdk-for-php/archive/1.5.17.1.zip",
+                "reference": "1.5.17.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "time": "2012-11-26 23:59:55",
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "authentication/",
+                    "extensions/",
+                    "lib/",
+                    "services/",
+                    "utilities/",
+                    "sdk.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amazon Web Services",
+                    "homepage": "http://aws.amazon.com"
+                }
+            ],
+            "description": "AWS SDK for PHP",
+            "homepage": "http://aws.amazon.com/sdkforphp/",
+            "keywords": [
+                "amazon",
+                "s3",
+                "sdk",
+                "aws",
+                "dynamodb",
+                "ec2"
+            ]
+        },
         {
             "name": "iron-io/iron_mq",
             "version": "v1.2.0",
@@ -50,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/laravel/framework",
-                "reference": "fc98eaa39edc18fc7923e1e5703e5deef1d0a3d7"
+                "reference": "061964c17ad761f7c4b09cbe2b7843c9ad3dcde2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/laravel/framework/archive/fc98eaa39edc18fc7923e1e5703e5deef1d0a3d7.zip",
-                "reference": "fc98eaa39edc18fc7923e1e5703e5deef1d0a3d7",
+                "url": "https://github.com/laravel/framework/archive/061964c17ad761f7c4b09cbe2b7843c9ad3dcde2.zip",
+                "reference": "061964c17ad761f7c4b09cbe2b7843c9ad3dcde2",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +156,7 @@
             "require-dev": {
                 "mockery/mockery": "0.7.2"
             },
-            "time": "2013-01-13 03:53:29",
+            "time": "2013-01-14 21:50:18",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -649,12 +699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "b371a89177526c2a5793649229b4dea9915549b6"
+                "reference": "ec42087f91dd2edfda091d9a8434bfaafb30b16b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/archive/b371a89177526c2a5793649229b4dea9915549b6.zip",
-                "reference": "b371a89177526c2a5793649229b4dea9915549b6",
+                "url": "https://github.com/symfony/HttpKernel/archive/ec42087f91dd2edfda091d9a8434bfaafb30b16b.zip",
+                "reference": "ec42087f91dd2edfda091d9a8434bfaafb30b16b",
                 "shasum": ""
             },
             "require": {
@@ -682,7 +732,7 @@
                 "symfony/dependency-injection": "2.2.*",
                 "symfony/finder": "2.2.*"
             },
-            "time": "2013-01-11 10:33:37",
+            "time": "2013-01-14 14:59:38",
             "type": "library",
             "extra": {
                 "branch-alias": {

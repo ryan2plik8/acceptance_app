@@ -1,6 +1,7 @@
 {
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"amazonwebservices/aws-sdk-for-php": "1.5.17.1"
 	},
 	"autoload": {
 		"classmap": [

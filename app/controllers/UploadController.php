@@ -31,8 +31,18 @@ class UploadController extends BaseController {
 	public function store()
 	{
 		//
+		$s3 = new AmazonS3();
+
 		$filename = Input::file('pdf')->getClientOriginalName();
 		$upload = Upload::create(array('filename' => $filename));
+		Input::file('pdf')->move('uploads', $filename);
+
+		$s3->batch()->create_object('acceptancequote', $filename, array(
+				'fileUpload' => 'uploads/'.$filename
+			));
+
+		$file_upload_response = $s3->batch()->send();
+		print_r($file_upload_response);
 		return View::make('upload')->with('status', 'File Uploaded!');
 	}
 
